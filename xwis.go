@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/noxworld-dev/xwis"
+	"github.com/opennox/xwis"
 )
 
 // NewXWISWithClient creates a Lister for a Nox XWIS lobby using an existing xwis.Client.

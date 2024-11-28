@@ -7,11 +7,11 @@ import (
 	_ "net/http/pprof"
 	"time"
 
-	"github.com/noxworld-dev/xwis"
+	"github.com/opennox/xwis"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/spf13/cobra"
 
-	"github.com/noxworld-dev/lobby"
+	"github.com/opennox/lobby"
 )
 
 func init() {

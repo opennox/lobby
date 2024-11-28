@@ -1,4 +1,4 @@
-FROM golang:1.17-alpine3.15 AS builder
+FROM golang:1.21-alpine3.20 AS builder
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ RUN go mod download
 ADD . .
 RUN go build -o nox-lobby ./cmd/nox-lobby
 
-FROM alpine:3.15
+FROM alpine:3.20
 
 RUN apk add --no-cache ca-certificates
 COPY --from=builder /app/nox-lobby /usr/bin/nox-lobby

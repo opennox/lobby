@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	lobby "github.com/noxworld-dev/lobby"
+	lobby "github.com/opennox/lobby"
 )
 
 func TestGetIP(t *testing.T) {
